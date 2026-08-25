@@ -117,7 +117,9 @@ def _render(nos, ctx, item=None):
             out.append(valor)
         elif tipo == "var":
             v = _valor(valor, ctx, item)
-            if isinstance(v, list):
+            if isinstance(v, bool):
+                out.append("sim" if v else "não")
+            elif isinstance(v, list):
                 out.append(", ".join(str(x) for x in v))
             else:
                 out.append("" if v is None else str(v))

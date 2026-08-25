@@ -35,7 +35,7 @@ certo, ou chamas por elas com `/nome`.
 | Voz e escrita | `voz-de-marca`, `humanizer-pt`, `humanizer`, `copy-resposta-direta`, `copywriting` |
 | Comercial | `setting-e-follow-up`, `calls-de-venda` |
 | Páginas | `pagina-de-oferta`, `thank-you-page`, `craft`, `web-interface-guidelines`, `ux-heuristics-review`, `cognitive-load-conversion`, `accessibility`, `general-design-review`, `frontend-design`, `motion-framer`, `webapp-testing` |
-| Anúncios | `meta-ads`, `criativos-anuncios` |
+| Anúncios | `meta-ads`, `criativos-anuncios`, `ghl-meta` (que anúncio traz os melhores clientes) |
 | Documentos | `doc-coauthoring` |
 | Fazer skills novas | `skill-creator` |
 

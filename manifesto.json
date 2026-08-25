@@ -1,11 +1,11 @@
 {
   "kit": "powerscale-skills-kit",
-  "versao": "2.0.0",
-  "gerado": "2026-08-25",
-  "total": 24,
+  "versao": "2.1.0",
+  "gerado": "2026-08-26",
+  "total": 25,
   "skills": {
     "accessibility": "340dc3b4767c2087c0fd68253eef3be3c28ab1fabfe480b11cccca88e2000f7d",
-    "arranque": "d6b801a0b6a7a1502fd3b63947c225e267c00f6d22154da58232164d5f11d490",
+    "arranque": "d9bf27050acd498eeff772be58e2296f6cf87805552c06369ee913f017478588",
     "calls-de-venda": "65fdba9a1d43ecd5d0dfa39e68738a65527eb3202cc9ebf4855348388828eea2",
     "cognitive-load-conversion": "b6c51e5ddeed1498fb5f35d803f17784e6dc4c3ecf537a0281fffe94155de3fd",
     "copy-resposta-direta": "fcb493bb15e3bbaf3d6cf99c8493475d92d327aa0935d052a421f4da3f7d6730",
@@ -16,6 +16,7 @@
     "ferramentas-e-acessos": "f71dceb539c3502516d37c6014e47946c566fbb63eae9fe663fb073876e0d99f",
     "frontend-design": "707c7694ab1923d9055e9b0b54b2f8310f59797d0f796068745e1b787486a953",
     "general-design-review": "64ffed4044e9c8e9a0458639f22deb4017dc4102e457e17d1a922aeaa02ea0cc",
+    "ghl-meta": "e63ae87b249fc07f84312de4e2c6a4e04fcf371ca6614c2336d25adee7371c4c",
     "humanizer": "70414f40a0773b009e32fa2914789966130700fc78473a24b91996615c20787b",
     "humanizer-pt": "0be2fa64bb904ee63b7d613437010892567a3c0ac8b24c9081567847fbd9cd58",
     "meta-ads": "b26591c6474a6cb6b7ac2d324d87b4b27a20d37b454f31de6d33052e08cde79d",

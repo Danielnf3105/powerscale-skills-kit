@@ -40,7 +40,7 @@ falha nesta instalação já falhou antes.
 |---|---|---|
 | "Nao dá para escrever o CLAUDE.md ainda" | faltam respostas | o comando diz quais; volta à fase 4 só para essas |
 | ficaram `{{` ou `<NOME>` no ficheiro | gerado a partir de um perfil incompleto | acaba a entrevista e gera outra vez |
-| ela editou o ficheiro e quer regerar | é seguro | o que estiver fora dos marcadores `kit:inicio`/`kit:fim` sobrevive |
+| editou o ficheiro e quer regerar | é seguro | o que estiver fora dos marcadores `kit:inicio`/`kit:fim` sobrevive |
 | o `CLAUDE.md` está velho | o perfil mudou depois | `gerar_perfil.py` outra vez; o verificador avisa disto |
 
 ## Regras que valem sempre
@@ -48,7 +48,7 @@ falha nesta instalação já falhou antes.
 - **Nunca lhe digas "não consigo" sem lhe dares o passo seguinte.**
 - Se o problema é mesmo de outra pessoa (um acesso, uma chave), escreve-lhe a
   mensagem pronta a enviar, em vez de a mandar pedir.
-- Se ela colar uma chave no chat, avisa na hora que essa chave passou a estar
+- Se colarem uma chave no chat, avisa na hora que essa chave passou a estar
   exposta e tem de ser trocada no serviço. Guarda a nova no cofre e nunca a
   repitas no chat.
 

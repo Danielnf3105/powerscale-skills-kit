@@ -129,6 +129,11 @@ def perfil_vazio() -> dict:
             "so": "", "terminal": "", "gestor_pacotes": "", "python_cmd": "",
             "pasta_trabalho": "", "constrangimentos": "",
         },
+        "canais": [],
+        "voz": {
+            "ficheiro": "", "fontes": [], "regra_de_ouro": "",
+            "recolhido_em": "", "amostras": 0,
+        },
         "descoberta": {"site": "", "instagram": "", "fonte": "", "recolhido_em": "", "notas": []},
     }
 
@@ -144,6 +149,8 @@ OBRIGATORIOS = [
     "marca.tratamento_publico",
     "maquina.so",
     "trabalho.urgente",
+    "canais",
+    "voz.regra_de_ouro",
 ]
 
 

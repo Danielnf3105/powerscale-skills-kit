@@ -13,7 +13,7 @@
    Mac:      ./instalar.sh
    ```
 
-2. **Se ela já tinha um `settings.json` ou um `CLAUDE.md`**, o instalador não
+2. **Se já existia um `settings.json` ou um `CLAUDE.md`**, o instalador não
    escreve por cima: guarda uma cópia com a data e avisa. Nesse caso lê os dois,
    diz-lhe numa frase o que muda, e junta-os tu. Nunca deixes um ficheiro
    `.novo` órfão à espera que alguém se lembre dele.

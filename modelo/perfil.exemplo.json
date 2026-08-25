@@ -9,12 +9,17 @@
     "papel": "responsável comercial e social selling",
     "estilo_resposta": "direta",
     "lingua": "pt-PT",
-    "outras_linguas": ["inglês"]
+    "outras_linguas": [
+      "inglês"
+    ]
   },
   "negocio": {
     "oferta": "um acompanhamento comercial de 3 meses",
     "quem_compra": "clínicas de estética com faturação acima de 15.000 euros por mês",
-    "prova": ["12 clínicas acompanhadas em 2026", "caso Nova Clínica: 4 consultas por semana para 11"],
+    "prova": [
+      "12 clínicas acompanhadas em 2026",
+      "caso Nova Clínica: 4 consultas por semana para 11"
+    ],
     "modelo": "servico"
   },
   "marca": {
@@ -26,40 +31,117 @@
     "logo_completo": null,
     "logo_icone": null,
     "tratamento_publico": "tu",
-    "nunca_dizer": ["cura", "garantido", "resultados sem esforço"],
+    "nunca_dizer": [
+      "cura",
+      "garantido",
+      "resultados sem esforço"
+    ],
     "fonte_cores": "ritasousa.pt a 2026-08-25"
   },
   "trabalho": {
-    "tipos": ["mensagens a leads", "copy", "anúncios", "análise de calls"],
+    "tipos": [
+      "mensagens a leads",
+      "copy",
+      "anúncios",
+      "análise de calls"
+    ],
     "para_clientes": true,
     "clientes": [
-      { "nome": "Nova Clínica", "servico": "social selling e follow-up", "pasta": "clientes/nova-clinica" },
-      { "nome": "Dr. Alves", "servico": "anúncios e página de oferta", "pasta": "clientes/dr-alves" }
+      {
+        "nome": "Nova Clínica",
+        "servico": "social selling e follow-up",
+        "pasta": "clientes/nova-clinica"
+      },
+      {
+        "nome": "Dr. Alves",
+        "servico": "anúncios e página de oferta",
+        "pasta": "clientes/dr-alves"
+      }
     ],
     "urgente": "recuperar as 40 leads de julho que ficaram sem resposta"
   },
   "ferramentas": {
-    "usa": ["Instagram", "WhatsApp", "Google Calendar", "Notion"],
-    "operar_sozinho": ["WhatsApp", "Google Calendar"],
-    "fora": ["a conta bancária", "o Instagram pessoal dela"]
+    "usa": [
+      "Instagram",
+      "WhatsApp",
+      "Google Calendar",
+      "Notion"
+    ],
+    "operar_sozinho": [
+      "WhatsApp",
+      "Google Calendar"
+    ],
+    "fora": [
+      "a conta bancária",
+      "o Instagram pessoal dela"
+    ]
   },
   "travoes": {
-    "confirmar_antes": ["enviar", "publicar", "apagar", "gastar"],
-    "extra": ["nunca falar de preços por escrito antes da call"]
+    "confirmar_antes": [
+      "enviar",
+      "publicar",
+      "apagar",
+      "gastar"
+    ],
+    "extra": [
+      "nunca falar de preços por escrito antes da call"
+    ]
   },
   "maquina": {
     "so": "Windows 11",
     "terminal": "PowerShell",
     "gestor_pacotes": "winget",
     "python_cmd": "py -3",
-    "pasta_trabalho": "C:\\Users\\rita\\Documents\\Estudio Rita Sousa",
-    "constrangimentos": "portátil de 8 GB, evitar transcrições longas em paralelo"
+    "pasta_trabalho": "~/Documents/Estudio Rita Sousa",
+    "constrangimentos": "portátil de 8 GB, evitar transcrições longas em paralelo",
+    "nota": "O ~ resolve nos dois sistemas: no Windows expande para %USERPROFILE%."
   },
   "descoberta": {
     "site": "https://ritasousa.pt",
     "instagram": "@ritasousa.studio",
     "fonte": "site",
     "recolhido_em": "2026-08-25",
-    "notas": ["o site trata por tu", "sem preços públicos"]
+    "notas": [
+      "o site trata por tu",
+      "sem preços públicos"
+    ]
+  },
+  "canais": [
+    {
+      "canal": "Site",
+      "link": "https://ritasousa.pt",
+      "quem": "ela",
+      "ativo": true
+    },
+    {
+      "canal": "Instagram",
+      "link": "https://instagram.com/ritasousa.studio",
+      "quem": "ela",
+      "ativo": true
+    },
+    {
+      "canal": "LinkedIn",
+      "link": "https://linkedin.com/in/ritasousa",
+      "quem": "ela",
+      "ativo": true
+    },
+    {
+      "canal": "Newsletter",
+      "link": "lista de 1.400 no Brevo",
+      "quem": "ela",
+      "ativo": false
+    }
+  ],
+  "voz": {
+    "ficheiro": "meu/voz.md",
+    "fontes": [
+      "11 posts de Instagram",
+      "4 emails à lista",
+      "1 áudio de 6 minutos",
+      "23 DMs a clientes"
+    ],
+    "regra_de_ouro": "Diz o número antes do argumento, e nunca promete o resultado, promete o trabalho.",
+    "recolhido_em": "2026-08-26",
+    "amostras": 39
   }
 }

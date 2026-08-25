@@ -249,7 +249,7 @@ def ver_pastas(r, p):
         r.aviso("pastas", "Sem pasta de trabalho definida no perfil",
                 "criar a pasta do negocio dela e gravar em maquina.pasta_trabalho")
         return
-    base = Path(raiz)
+    base = Path(os.path.expandvars(raiz)).expanduser()
     if not base.is_dir():
         r.falha("pastas", "A pasta de trabalho nao existe: %s" % base, "criar a pasta")
         return

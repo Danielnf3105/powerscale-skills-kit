@@ -33,7 +33,7 @@ fazê-la trabalhar por ti.
 
    Isto continua a ser medir. O que não se faz é adivinhar uma cor.
 
-4. **O Instagram não se lê por programa** (exige sessão iniciada). Se ela deu o
+4. **O Instagram não se lê por programa** (exige sessão iniciada). Se deram o
    Instagram, usa-o de outra maneira: "manda-me três publicações que sejam mesmo
    a tua voz". Isso vale mais para a voz do que qualquer raspagem.
 
@@ -41,13 +41,13 @@ fazê-la trabalhar por ti.
    `descobrir_site.py` já escreve o que encontrou.
 
 6. Marca a fase. **Sem internet ou sem site, marca `saltada` e segue**: a
-   descoberta acelera a entrevista, não é condição para ela.
+   descoberta acelera a entrevista, não é condição para a fazer.
 
    ```
    <python> ferramentas/estado.py --marcar descobrir=feita
    ```
 
-**Está feita quando:** ou tens um retrato do negócio dela para confirmar na fase
+**Está feita quando:** ou tens um retrato do negócio para confirmar na fase
 seguinte, ou sabes que não há e vais perguntar tudo.
 
 <!-- powerscale-skills-kit -->

@@ -43,7 +43,7 @@
    ```
 
 **Está feita quando:** o Python 3 responde com a versão, e o que faltava ou foi
-instalado ou ficou registado como dispensável para o trabalho dela.
+instalado ou ficou registado como dispensável para o trabalho em causa.
 
 <!-- powerscale-skills-kit -->
 

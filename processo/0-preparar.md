@@ -18,7 +18,7 @@
    ```
 
 3. Descobre a pasta de documentos real. **No Windows pode estar redirecionada
-   para o OneDrive**, e é aí que a pasta de trabalho dela deve nascer, não numa
+   para o OneDrive**, e é aí que a pasta de trabalho deve nascer, não numa
    `Documents` local que nunca sincroniza.
 
    ```
@@ -36,7 +36,7 @@
    ```
 
 **Está feita quando:** o `estado.json` existe e sabes o sistema operativo, o
-terminal e onde ficam os documentos dela.
+terminal e onde ficam os documentos de quem instala.
 
 <!-- powerscale-skills-kit -->
 

@@ -112,6 +112,22 @@ O que **não** se corta: a repetição da palavra âncora, imperativos, números
 específicos e feios, a voz do cliente à letra, objeções ditas pelo nome, frases
 curtas. E nunca inventar um facto, um nome ou um número para soar mais humano.
 
+### A voz de {{pessoa.nome}}
+{{#se voz.regra_de_ouro}}
+**A regra de ouro:**
+
+> {{voz.regra_de_ouro}}
+
+{{/se}}{{#se voz.ficheiro}}O Voice Bible completo está em `{{voz.ficheiro}}`: as leis, as citações à
+letra, e o léxico do que se usa e do que nunca se diz. **Abrir antes de
+escrever qualquer peça assinada por {{pessoa.nome}}**, não depois da primeira
+rejeição.
+
+{{/se}}{{#se voz.fontes}}Extraído de: {{voz.fontes}}.
+
+{{/se}}Copy para um cliente começa no Voice Bible **desse cliente**, não neste. São
+pessoas diferentes. Skill: `voz-de-marca`.
+
 ---
 
 ## Modo de resposta
@@ -193,6 +209,21 @@ primeiro.
 4. Listei o que fica bloqueado do lado dela, com o passo exato.
 
 Antes disto não digo que está feito. "Deve estar a funcionar" não conta.
+
+{{#se canais}}
+---
+
+## Onde {{pessoa.nome}} publica
+
+| Canal | Link | Quem publica | Ativo |
+|---|---|---|---|
+{{#cada canais}}| {{.canal}} | {{.link}} | {{.quem}} | {{.ativo}} |
+{{/cada}}
+
+Isto entra em quase tudo: CTA de emails e páginas, lives, retargeting, pixel,
+publicações, prova social, e os criativos que reaproveitam o orgânico. Se um
+canal novo aparecer, acrescenta-o aqui em vez de o procurar outra vez.
+{{/se}}
 
 ---
 
