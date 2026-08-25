@@ -1,0 +1,4 @@
+Instala este kit e configura-me o Claude. Estás na pasta certa: lê o CLAUDE.md
+desta pasta e segue-o do princípio ao fim.
+
+Não me mandes escrever comandos. Faz tu, e diz-me só o que precisas de mim.

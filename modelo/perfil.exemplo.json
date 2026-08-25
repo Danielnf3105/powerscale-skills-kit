@@ -1,0 +1,65 @@
+{
+  "versao_esquema": 1,
+  "completo": true,
+  "atualizado": "2026-08-25 00:00",
+  "pessoa": {
+    "nome": "Rita Sousa",
+    "assistente": "Nina",
+    "negocio": "Estúdio Rita Sousa",
+    "papel": "responsável comercial e social selling",
+    "estilo_resposta": "direta",
+    "lingua": "pt-PT",
+    "outras_linguas": ["inglês"]
+  },
+  "negocio": {
+    "oferta": "um acompanhamento comercial de 3 meses",
+    "quem_compra": "clínicas de estética com faturação acima de 15.000 euros por mês",
+    "prova": ["12 clínicas acompanhadas em 2026", "caso Nova Clínica: 4 consultas por semana para 11"],
+    "modelo": "servico"
+  },
+  "marca": {
+    "cor_principal": "#1F3A34",
+    "cor_acento": "#C9A227",
+    "cor_fundo": "#FAF7F2",
+    "cor_texto": "#1A1A1A",
+    "tipografia": "Playfair Display para títulos, Inter para o resto",
+    "logo_completo": null,
+    "logo_icone": null,
+    "tratamento_publico": "tu",
+    "nunca_dizer": ["cura", "garantido", "resultados sem esforço"],
+    "fonte_cores": "ritasousa.pt a 2026-08-25"
+  },
+  "trabalho": {
+    "tipos": ["mensagens a leads", "copy", "anúncios", "análise de calls"],
+    "para_clientes": true,
+    "clientes": [
+      { "nome": "Nova Clínica", "servico": "social selling e follow-up", "pasta": "clientes/nova-clinica" },
+      { "nome": "Dr. Alves", "servico": "anúncios e página de oferta", "pasta": "clientes/dr-alves" }
+    ],
+    "urgente": "recuperar as 40 leads de julho que ficaram sem resposta"
+  },
+  "ferramentas": {
+    "usa": ["Instagram", "WhatsApp", "Google Calendar", "Notion"],
+    "operar_sozinho": ["WhatsApp", "Google Calendar"],
+    "fora": ["a conta bancária", "o Instagram pessoal dela"]
+  },
+  "travoes": {
+    "confirmar_antes": ["enviar", "publicar", "apagar", "gastar"],
+    "extra": ["nunca falar de preços por escrito antes da call"]
+  },
+  "maquina": {
+    "so": "Windows 11",
+    "terminal": "PowerShell",
+    "gestor_pacotes": "winget",
+    "python_cmd": "py -3",
+    "pasta_trabalho": "C:\\Users\\rita\\Documents\\Estudio Rita Sousa",
+    "constrangimentos": "portátil de 8 GB, evitar transcrições longas em paralelo"
+  },
+  "descoberta": {
+    "site": "https://ritasousa.pt",
+    "instagram": "@ritasousa.studio",
+    "fonte": "site",
+    "recolhido_em": "2026-08-25",
+    "notas": ["o site trata por tu", "sem preços públicos"]
+  }
+}

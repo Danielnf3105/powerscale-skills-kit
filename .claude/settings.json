@@ -1,0 +1,28 @@
+{
+  "$comentario": "Permissoes desta pasta, so para a instalacao correr sem interrogar quem nao percebe o que lhe estao a perguntar. Nao abre nada fora daqui.",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "WebFetch",
+      "Bash(./instalar.sh:*)",
+      "Bash(bash instalar.sh:*)",
+      "Bash(powershell:*)",
+      "Bash(python3 ferramentas/:*)",
+      "Bash(py -3 ferramentas/:*)",
+      "Bash(python ferramentas/:*)",
+      "Bash(chmod +x:*)",
+      "Bash(sw_vers:*)",
+      "Bash(uname:*)",
+      "Bash(node -v:*)",
+      "Bash(git --version:*)",
+      "Bash(date:*)"
+    ],
+    "deny": [
+      "Bash(sudo:*)",
+      "Bash(rm -rf /:*)",
+      "Bash(rm -rf ~:*)"
+    ]
+  }
+}

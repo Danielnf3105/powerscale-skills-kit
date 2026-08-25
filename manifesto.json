@@ -1,0 +1,32 @@
+{
+  "kit": "powerscale-skills-kit",
+  "versao": "2.0.0",
+  "gerado": "2026-08-25",
+  "total": 24,
+  "skills": {
+    "accessibility": "340dc3b4767c2087c0fd68253eef3be3c28ab1fabfe480b11cccca88e2000f7d",
+    "arranque": "d6b801a0b6a7a1502fd3b63947c225e267c00f6d22154da58232164d5f11d490",
+    "calls-de-venda": "65fdba9a1d43ecd5d0dfa39e68738a65527eb3202cc9ebf4855348388828eea2",
+    "cognitive-load-conversion": "b6c51e5ddeed1498fb5f35d803f17784e6dc4c3ecf537a0281fffe94155de3fd",
+    "copy-resposta-direta": "fcb493bb15e3bbaf3d6cf99c8493475d92d327aa0935d052a421f4da3f7d6730",
+    "copywriting": "4386d88fb642a34a8e712b13675e16744ab47041f94a4dacddeff3ae0385edaa",
+    "craft": "58f281028a86d167f50b326d5bbfcd2fd4fe03ac3d3d56b3e0775779420a520f",
+    "criativos-anuncios": "bb3338531482e067926f547d3a1288368205d7090c637ae91adf7faf6d2f8e70",
+    "doc-coauthoring": "a8656426d25c02bcc410023c1a148c8f34f55e1de247b7053abc0cdd3c7d5c08",
+    "ferramentas-e-acessos": "f71dceb539c3502516d37c6014e47946c566fbb63eae9fe663fb073876e0d99f",
+    "frontend-design": "707c7694ab1923d9055e9b0b54b2f8310f59797d0f796068745e1b787486a953",
+    "general-design-review": "64ffed4044e9c8e9a0458639f22deb4017dc4102e457e17d1a922aeaa02ea0cc",
+    "humanizer": "70414f40a0773b009e32fa2914789966130700fc78473a24b91996615c20787b",
+    "humanizer-pt": "0be2fa64bb904ee63b7d613437010892567a3c0ac8b24c9081567847fbd9cd58",
+    "meta-ads": "b26591c6474a6cb6b7ac2d324d87b4b27a20d37b454f31de6d33052e08cde79d",
+    "motion-framer": "c684ada3cd48a1ed6a93be7c451add48b3c6a352177a8673c981d0b50263fcfa",
+    "pagina-de-oferta": "be937173d1246ed000159c379069710392330d70100715d27fa80b2a48763caf",
+    "setting-e-follow-up": "9c9d2c2a2d042d28b4c6a65fdb5b0fc4881eeee431bd5cb1ca011ab12cb43d33",
+    "skill-creator": "89b9d5c3ec28ae60b7857c0f83d63a04ac231b28ee508d05a27d0a463987721c",
+    "thank-you-page": "5e8650c7ffa9cd4196616a3acd4c025f6bf727aa852d20f42435a448cec28d1d",
+    "ux-heuristics-review": "a6530814f0dbeafcc464ae96a29c4dd69bd32c21707d010b64073df96e8bd31e",
+    "voz-de-marca": "f457b32c1dfda39382d2054300f6616bf41b7c94af60cd52ed7cab6e2e5fb4b1",
+    "web-interface-guidelines": "f2b74935af573686f9d8bc0946137c3e3b8ed8e044f8558609665c9ce7f4fa2b",
+    "webapp-testing": "1afd26be0bbbf766091a3e4966b6d3929acb2809f3a76c5f051c5967bc160314"
+  }
+}

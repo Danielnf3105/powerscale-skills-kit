@@ -1,0 +1,51 @@
+{
+  "$comentario": "Permissões de arranque. Liberdade para trabalhar, travões no que é irreversível. Instalar em ~/.claude/settings.json (Windows: %USERPROFILE%\\.claude\\settings.json).",
+  "permissions": {
+    "allow": [
+      "Read",
+      "Glob",
+      "Grep",
+      "Edit",
+      "Write",
+      "NotebookEdit",
+      "Bash",
+      "WebFetch",
+      "WebSearch",
+      "CronCreate",
+      "CronList",
+      "CronDelete",
+      "ScheduleWakeup",
+      "TaskCreate",
+      "TaskList",
+      "TaskGet",
+      "TaskUpdate",
+      "TaskOutput",
+      "TaskStop",
+      "Monitor"
+    ],
+    "deny": [
+      "Bash(sudo *)",
+      "Bash(rm -rf /)",
+      "Bash(rm -rf /*)",
+      "Bash(rm -rf ~)",
+      "Bash(rm -rf ~/*)",
+      "Bash(rm -rf $HOME*)",
+      "Bash(mkfs*)",
+      "Bash(dd if=*)",
+      "Bash(shutdown *)",
+      "Bash(reboot*)",
+      "Bash(format *)",
+      "Bash(Remove-Item -Recurse -Force C:*)",
+      "Bash(git push --force*)",
+      "Bash(git push -f *)"
+    ],
+    "ask": [
+      "Bash(vercel domains rm *)",
+      "Bash(vercel project rm *)",
+      "Bash(vercel remove *)",
+      "Bash(npm publish*)",
+      "Bash(gh repo delete*)"
+    ]
+  },
+  "theme": "dark"
+}
