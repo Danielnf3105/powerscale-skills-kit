@@ -1,6 +1,6 @@
 {
   "kit": "powerscale-skills-kit",
-  "versao": "2.1.0",
+  "versao": "2.2.0",
   "gerado": "2026-08-26",
   "total": 25,
   "skills": {
@@ -16,7 +16,7 @@
     "ferramentas-e-acessos": "f71dceb539c3502516d37c6014e47946c566fbb63eae9fe663fb073876e0d99f",
     "frontend-design": "707c7694ab1923d9055e9b0b54b2f8310f59797d0f796068745e1b787486a953",
     "general-design-review": "64ffed4044e9c8e9a0458639f22deb4017dc4102e457e17d1a922aeaa02ea0cc",
-    "ghl-meta": "e63ae87b249fc07f84312de4e2c6a4e04fcf371ca6614c2336d25adee7371c4c",
+    "ghl-meta": "1bc5f69b5177075be5a19b5f365ac5dc92a29134a42d4a1e6ff49c5043e3d757",
     "humanizer": "70414f40a0773b009e32fa2914789966130700fc78473a24b91996615c20787b",
     "humanizer-pt": "0be2fa64bb904ee63b7d613437010892567a3c0ac8b24c9081567847fbd9cd58",
     "meta-ads": "b26591c6474a6cb6b7ac2d324d87b4b27a20d37b454f31de6d33052e08cde79d",

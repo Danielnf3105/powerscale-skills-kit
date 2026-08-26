@@ -1,15 +1,16 @@
 ---
 name: ghl-meta
 description: >
-  Junta o CRM (GoHighLevel) com o Facebook Ads para responder a uma pergunta
-  só: que anúncio, pelo nome, trouxe os clientes que realmente pagaram. Liga a
-  atribuição das leads (UTM, fbclid) ao nome do anúncio e ao dinheiro fechado,
-  e diz o que corrigir quando os dados não emparelham. Usar quando ele diz "que
-  anúncio está a trazer os melhores clientes", "não consigo cruzar o CRM com o
-  Facebook", "o Facebook diz X leads e no CRM tenho Y", "que criativo devo
-  cortar", "qual é o custo por cliente e não por lead", ou quando entra uma
-  conta nova que corre anúncios e tem CRM.
-version: 1.0.0
+  Junta o CRM (GoHighLevel) com o Facebook Ads e mostra, por anúncio, quantas
+  leads trouxe, em que etapa do funil cada uma está agora, e quanto dinheiro
+  fechou. Sai em quadro no terminal e em relatório visual que abre no browser.
+  Diz também o que corrigir quando os dados não emparelham. Usar quando ele diz
+  "que anúncio está a trazer os melhores clientes", "onde é que as leads deste
+  anúncio ficaram presas", "não consigo cruzar o CRM com o Facebook", "o
+  Facebook diz X leads e no CRM tenho Y", "que criativo devo cortar", "qual é o
+  custo por cliente e não por lead", ou quando entra uma conta nova que corre
+  anúncios e tem CRM.
+version: 1.1.0
 author: PowerScale Skills Kit
 ---
 
@@ -79,10 +80,29 @@ Duas notas que poupam uma tarde:
 
 ```
 python3 ~/.claude/kit/ferramentas/ghl_meta.py --relatorio --dias 30
-python3 ~/.claude/kit/ferramentas/ghl_meta.py --relatorio --dias 90 --csv anuncios.csv
+python3 ~/.claude/kit/ferramentas/ghl_meta.py --relatorio --dias 30 --html relatorio.html
+python3 ~/.claude/kit/ferramentas/ghl_meta.py --relatorio --dias 90 --csv dados.csv
 ```
 
-Sai um quadro por nome de anúncio, ordenado por **valor ganho**:
+Saem duas coisas.
+
+**Onde estão as leads de cada anúncio, agora.** Cada linha é um anúncio, cada
+coluna é uma etapa do funil dele no GHL, e o número é quantas leads desse
+anúncio estão paradas ali:
+
+```
+ANUNCIO                      Lead nova Contactad Reuniao m Proposta   Ganhas Perdidas
+VSL | Caso Joana | 4x5               0         3         4        3        2        0
+VSL | Hook agressivo | 9x16         26         0         0        0        0        3
+Carrossel | 5 erros | 1x1            0         0         0        0        0        0
+```
+
+Aquela coluna com 26 é o diagnóstico inteiro: esse anúncio traz muita gente que
+entra no CRM e **nunca anda**. Isso não se resolve trocando o criativo, resolve-se
+na qualificação ou no que a página promete. E o primeiro anúncio, com menos de
+metade das leads, é o único que produz reuniões e vendas.
+
+**E o quadro por resultado**, ordenado por valor ganho:
 
 ```
 ANUNCIO                             LEADS  OPORT  GANHAS      VALOR     GASTO CUSTO/LEAD
@@ -97,8 +117,53 @@ ele parece o melhor dos dois.
 Linhas marcadas com `~` foram juntas por nome e são aproximadas: dois anúncios
 com o mesmo nome ficam somados.
 
+## Passo 4: a versão que se vê
+
+```
+python3 ~/.claude/kit/ferramentas/ghl_meta.py --relatorio --dias 30 --html ~/Desktop/anuncios.html
+```
+
+Escreve **um ficheiro só**, nas cores da marca dele (lidas do perfil), que abre
+no browser com dois cliques e se manda por email a quem for preciso. Traz os
+números do topo (leads, clientes fechados, valor, gasto, custo por cliente), a
+matriz anúncio × etapa com as células pintadas por intensidade, e o quadro por
+resultado. Quanto mais escura a célula, mais leads paradas ali: vê-se o
+problema antes de se ler o número.
+
+Sem ligações para fora e sem bibliotecas: abre sempre, mesmo sem internet.
+
+## Passo 5: correr sozinho, uma vez por semana
+
+Um relatório que só existe quando alguém se lembra de o pedir não se lê.
+Agenda-o e ele passa a estar lá.
+
+**Windows**, todas as segundas às 9h:
+
+```
+schtasks /create /tn "Relatorio de anuncios" /sc weekly /d MON /st 09:00 ^
+  /tr "py -3 %USERPROFILE%\.claude\kit\ferramentas\ghl_meta.py --relatorio --dias 30 --html %USERPROFILE%\Desktop\anuncios.html"
+```
+
+**Mac**, o mesmo com `crontab -e`:
+
+```
+0 9 * * 1 /usr/bin/python3 ~/.claude/kit/ferramentas/ghl_meta.py --relatorio --dias 30 --html ~/Desktop/anuncios.html
+```
+
+Depois de agendar, **corre a tarefa uma vez à mão e confirma que o ficheiro
+aparece**. Um agendamento que nunca se viu correr não está feito: é só uma
+linha numa lista.
+
+A janela de 30 dias é o mínimo razoável. Se o ciclo de venda dele for mais
+longo do que isso, sobe para 60 ou 90, senão o relatório mostra gasto sem
+receita e faz cortar o que estava a resultar.
+
 ## Como se lê
 
+- **A matriz das etapas responde a uma pergunta diferente da tabela.** A tabela
+  diz o que já deu dinheiro; a matriz diz o que está a caminho e onde está
+  encravado. Um anúncio com poucas vendas mas com gente na etapa de proposta
+  não é um anúncio mau, é um anúncio recente.
 - **Ordena por valor ganho, nunca por leads.** Leads baratas de gente que nunca
   compra são o caminho mais rápido para escalar um prejuízo.
 - **Custo por cliente, não custo por lead.** Gasto a dividir pelas ganhas.
