@@ -156,6 +156,18 @@ Abrir uma amostra e olhar mesmo para ela antes de entregar. Depois mostrar o lot
 - A promessa concreta ("dobrar a faturação") atrai mais cliques e leads menos
   qualificados. Usa-a como teste B contra a versão mais seca, não como padrão.
 
+---
+
+## Antes de produzir seja o que for
+
+Este gerador faz peças. **Quem decide o que a peça diz é a
+`estrategia-criativos`**: qual o conceito, que ângulo, que nível de
+consciência, e se este formato é sequer o certo (há cinco perguntas a fazer
+antes de escolher o formato).
+
+Um lote tipográfico é um formato de teste barato: serve para descobrir que
+ângulo pega, antes de se gastar dinheiro em produção.
+
 <!-- powerscale-skills-kit -->
 
 ---

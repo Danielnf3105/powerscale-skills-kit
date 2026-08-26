@@ -205,6 +205,22 @@ recusa publicar, e o defeito fica escondido até alguém mexer.
   cura, de rendimento garantido, nem de linguagem que identifique a pessoa
   ("estás acima do peso?").
 
+---
+
+## O que sobe para a conta decide-se antes
+
+Esta skill é a execução: montar, subir, ativar e validar por API. **A decisão
+do que subir está em `estrategia-criativos`**: um conceito por conjunto, 3 a
+5 anúncios por conceito, mínimo 3 e máximo 10 por conjunto, e a separação
+entre campanha de teste e campanha de escala.
+
+Duas regras de lá que se aplicam aqui e evitam estragos:
+
+- **Nunca desativar na campanha de teste um criativo que está a dar
+  resultado.** Reaproveita-se na campanha de escala, não se relança.
+- **Um winner numa conta não é winner em qualquer conta.** A escala é onde se
+  testa se ele aguenta noutro ambiente.
+
 <!-- powerscale-skills-kit -->
 
 ---

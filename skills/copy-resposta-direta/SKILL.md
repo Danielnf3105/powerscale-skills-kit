@@ -223,6 +223,23 @@ ao mesmo tempo.
   estruturas que denunciam texto gerado) e como a voz de marca decide quando
   importar, ou não, os marcadores internet-native. Lê antes de validar.
 
+---
+
+## Copy de anúncios: lê a estratégia primeiro
+
+Antes de escrever a primeira linha de um anúncio, **`estrategia-criativos`**.
+Lá está o que decide se a copy tem hipótese: o conceito (persona, ângulo,
+oferta), os ingredientes de um ângulo que dura, as três camadas do hook
+(visual, áudio, copy), e a transição do hook para o corpo sem degrau.
+
+Duas coisas de lá que mudam a forma de escrever:
+
+- **O hook vale 80% do criativo.** Quinze hooks e dois corpos ganham a dois
+  hooks e cinco corpos. Escreve os hooks em série, não um de cada vez.
+- **Agitar a dor dura mais do que chamar a persona.** "Tens dor nas costas e
+  passas o dia sentado" aguenta meses; "És empresário e passas o dia sentado"
+  queima em semanas.
+
 <!-- powerscale-skills-kit -->
 
 ---
