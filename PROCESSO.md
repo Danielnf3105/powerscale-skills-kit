@@ -34,8 +34,12 @@ lido de uma ponta à outra e despachado em bloco.
 | 6 | Verificar | `processo/6-verificar.md` | PRONTO, e a imagem de prova | `verificar.py --nivel completo` sai 0 ou 2 |
 | 7 | Primeiro trabalho | `processo/7-primeiro-trabalho.md` | uma coisa real feita | existe um entregável que a pessoa pode usar hoje |
 
-Se alguma coisa falhar, `processo/problemas.md` antes de lhe perguntares seja o
-que for.
+Duas referências que se leem quando forem precisas, não do princípio ao fim:
+
+- `processo/chaves-e-acessos.md`, onde se vão buscar as chaves do GoHighLevel e
+  da Meta, clique a clique.
+- `processo/problemas.md`, sintoma, causa e o que fazer. **Ler antes de
+  perguntar seja o que for à pessoa.**
 
 ## Como saber onde estás
 
