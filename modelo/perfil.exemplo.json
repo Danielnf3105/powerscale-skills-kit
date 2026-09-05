@@ -36,7 +36,7 @@
       "garantido",
       "resultados sem esforço"
     ],
-    "fonte_cores": "ritasousa.pt a 2026-08-25"
+    "fonte_cores": "exemplo-rita.pt a 2026-08-25"
   },
   "trabalho": {
     "tipos": [
@@ -97,8 +97,8 @@
     "nota": "O ~ resolve nos dois sistemas: no Windows expande para %USERPROFILE%."
   },
   "descoberta": {
-    "site": "https://ritasousa.pt",
-    "instagram": "@ritasousa.studio",
+    "site": "https://exemplo-rita.pt",
+    "instagram": "@exemplo.rita",
     "fonte": "site",
     "recolhido_em": "2026-08-25",
     "notas": [
@@ -109,7 +109,7 @@
   "canais": [
     {
       "canal": "Site",
-      "link": "https://ritasousa.pt",
+      "link": "https://exemplo-rita.pt",
       "quem": "ela",
       "ativo": true
     },

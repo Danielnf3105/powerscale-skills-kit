@@ -41,7 +41,7 @@ Lições operacionais do build da <cliente>. Seguir à risca evita repetir erros
 
 - Pasta de raiz **sem espaços** `<parceiro>-online/` com `index.html` (= cópia do canónico
   sem-preço) + `assets/` + (opcional) `vercel.json`.
-- `cd "<parceiro>-online" && export PATH="/usr/local/bin:$HOME/.npm-global/bin:$PATH" && vercel --prod --scope power-scale --yes` (com `dangerouslyDisableSandbox:true`).
+- `cd "<parceiro>-online" && export PATH="/usr/local/bin:$HOME/.npm-global/bin:$PATH" && vercel --prod --scope <o-teu-scope-vercel> --yes` (com `dangerouslyDisableSandbox:true`).
 - Confirmar live: `curl -s -o /dev/null -w "%{http_code}" URL/` = 200 e um asset = 200 (também sandbox off).
 - Sincronizar: a pasta de deploy e o ficheiro de trabalho devem ficar iguais (cópia + `assets/`).
 - ⚠️ Estratégia: a versão **online é a sem preço**; a com preço fica para as reuniões de fecho (ou deploy à parte).

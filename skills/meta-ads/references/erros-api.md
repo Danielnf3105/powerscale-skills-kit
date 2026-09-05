@@ -69,12 +69,12 @@ Tudo aqui foi descoberto à força em produção (<cliente>/<cliente>, jul 2026)
 ## Pôr criativos em produção: IMAGEM vs VÍDEO (não confundir)
 
 ### IMAGEM: autonomia total, a biblioteca é dispensável
-`ads_create_creative` aceita **`image_url`** e a Meta copia o ficheiro na criação. **Nunca pedir upload ao cliente para imagens.** Procedimento validado (23.07, White/Black Manda Kimono em produção sem intervenção dele):
+`ads_create_creative` aceita **`image_url`** e a Meta copia o ficheiro na criação. **Nunca pedir upload ao cliente para imagens.** Procedimento validado em produção num e-commerce real, sem intervenção do cliente:
 
 ```bash
 DEST=~/Documents/Claude/Deploys/<cliente>-ads-assets
 mkdir -p "$DEST" && cp <ficheiros renomeados> "$DEST/"
-cd "$DEST" && vercel deploy --prod --yes --name <cliente>-ads-assets --scope power-scale
+cd "$DEST" && vercel deploy --prod --yes --name <cliente>-ads-assets --scope <o-teu-scope-vercel>
 ```
 - Precisa de `dangerouslyDisableSandbox: true` (rede) e do caminho absoluto do vercel (`~/.npm-global/bin/vercel`).
 - Um `index.html` mínimo evita listagem vazia; `vercel.json` com Cache-Control é opcional.
@@ -84,7 +84,7 @@ cd "$DEST" && vercel deploy --prod --yes --name <cliente>-ads-assets --scope pow
 
 ### VÍDEO: precisa mesmo de estar na biblioteca (`video_id`)
 O MCP não faz upload de vídeo e `ads_create_creative` não aceita URL de vídeo. Opções, por ordem:
-1. **Verificar primeiro se já lá está** (`ads_get_ad_videos` com filtro `title`): pode ter sido subido num lote anterior. Foi o caso do `NI_KAFTANKHAKIGEO.mp4` a 23.07, o que poupou uma ida ao cliente.
+1. **Verificar primeiro se já lá está** (`ads_get_ad_videos` com filtro `title`): pode ter sido subido num lote anterior. Já aconteceu um vídeo estar subido de um lote anterior, o que poupou uma ida ao cliente.
 2. `meta_upload.py upload` via Graph API `file_url` (exige token System User em `~/.config/a-casa/meta-ads.env`; suporta `META_TOKEN_<account_id>` por BM ou `META_ACCESS_TOKEN` de BM guarda-chuva). **Ainda por criar: é o único bloqueio real que resta.**
 3. Último recurso: o cliente carrega a pasta renomeada no Ads Manager (validado: 84 ficheiros em ~5 min).
 
@@ -102,12 +102,12 @@ Vídeos >100 MB excedem o limite estático do Vercel para a via 2: alojar na VPS
 
 ## Personalização por posicionamento (asset customization): 1 anúncio feed+stories
 
-Validado na <cliente> 2026-07-27 (ad de teste `120250571049240168`). Cria UM anúncio que serve o vídeo 4:5 no feed e o 9:16 nos stories/reels. Mecânica (confirmada com a doc da Marketing API):
+Validado em produção com um anúncio de teste real. Cria UM anúncio que serve o vídeo 4:5 no feed e o 9:16 nos stories/reels. Mecânica (confirmada com a doc da Marketing API):
 
 - **Não existe `optimization_type: "PLACEMENT"`** (dá erro). A customização por posicionamento é ativada só pela presença de `asset_customization_rules`.
 - **Mínimo 2 regras.** O mapeamento vídeo→posicionamento é por `adlabels` (nome do label), nunca por índice. Cada regra referencia um label para CADA asset que uses (video, body, title, link).
 - **Cobertura de posicionamentos:** as regras só precisam de cobrir os grupos que interessam (feed + stories/reels); a Meta aceitou o ad com os posicionamentos exóticos (instream 16:9, messenger, threads, notification) de fora. Feed do Instagram = `stream` (não `feed`).
-- Passa-se via `ads_create_ad`, argumento `creative` (JSON string). `object_story_spec` leva só `page_id` (a página `1110216665705167` da <cliente> já tem IG ligado, por isso não é preciso `instagram_user_id`; se as regras de IG falharem, adicionar `instagram_user_id`).
+- Passa-se via `ads_create_ad`, argumento `creative` (JSON string). `object_story_spec` leva só `page_id` (se a página do cliente já tiver o IG ligado não é preciso `instagram_user_id`; se as regras de IG falharem, adicionar `instagram_user_id`).
 - Vídeos: obter o `video_id` de cada creative FEED e STORIES existente (`ads_get_creatives` fields `["video_id","body"]`); o body do creative de feed é a copy do produto.
 - O ad nasce `PENDING_REVIEW` PAUSED (normal). Confirmar com `ads_get_ad_preview` em `MOBILE_FEED_STANDARD` (sai 4:5) e `INSTAGRAM_STORY` (sai 9:16).
 
@@ -155,12 +155,11 @@ Para produto só com um formato: anúncio simples (um `video_id`/`image_hash`), 
   lançamento; se a página ainda não existir na loja, é sinal de teaser.
 - **Copy só no feed (stories limpas): 2 `bodies` no asset_feed_spec**, um com a copy (label do
   feed) e um **vazio `""`** (label das stories). A API aceita o body vazio sem fallback nenhum
-  (validado em produção, anúncio 120251033977560168). Confirmar com os 2 previews.
-- **`ads_activate_entity` está sob regra "ask" no settings GLOBAL do cliente**, e o ask ganha ao
-  allow do projeto e sobrevive ao `--dangerously-skip-permissions` em sessões headless. Cura
-  temporária validada: suspender a entrada do ask no `~/.claude/settings.json` (com backup),
-  correr, e REPOR IMEDIATAMENTE. A regra existe por causa de campanhas: nunca a remover em
-  definitivo.
+  (validado em produção). Confirmar com os 2 previews.
+- **`ads_activate_entity` pode estar sob regra "ask" nas settings**, e o ask ganha ao
+  allow do projeto mesmo em sessões headless. Não contornes a regra: ela existe para nenhuma
+  campanha ser ativada sem um humano confirmar. Se uma sessão automática precisa de ativar
+  entidades, deixa-as criadas em pausa e ativa tu pela sessão interativa.
 - **Sessões headless (`claude -p` + runbook fechado) funcionam para operar a Meta** quando o MCP
   está em baixo na sessão principal: runbook com payloads literais + ficheiro de RESULTADOS
   escrito à medida + regra "se falhar fora do previsto, PÁRA". Duas execuções limpas (teasers LA

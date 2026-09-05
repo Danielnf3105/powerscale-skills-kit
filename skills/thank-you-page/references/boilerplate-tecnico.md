@@ -53,7 +53,7 @@ src="https://www.facebook.com/tr?id=<PIXEL_ID_DO_CLIENTE>&ev=Lead&noscript=1"/><
 ```html
 <script>
 (function(){
-  var WA_NUMERO = "<numero-com-indicativo-sem-mais>"; // ex: 351917992016
+  var WA_NUMERO = "<numero-com-indicativo-sem-mais>"; // ex: 351910000000
   var nome = "<nome-da-lead-se-disponivel>";
   var txt = nome
     ? "Olá, já marquei a minha sessão. Sou o/a " + nome + "."

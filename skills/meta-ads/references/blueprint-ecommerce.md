@@ -44,7 +44,7 @@ Um único anúncio por produto, com o formato certo em cada posicionamento (feat
 - Implementação: `asset_feed_spec` no `creative` do `ads_create_ad`, com os 2 vídeos rotulados (`adlabels`) e 2 `asset_customization_rules` (grupo feed / grupo stories-reels). Payload literal em `erros-api.md`.
 - NUNCA dois anúncios FEED/STORIES separados (erro apanhado pelo cliente 2026-07-27; divide aprendizado e prova social).
 - Destinos: produto próprio quando existe página; kimonos/categoria genérica → página da categoria; resto → coleção core best sellers. Tudo verificado com curl 200 antes.
-- Contas de referência (<cliente>): pixel `1352779681584211`, página `1110216665705167`, conta `872801796579494`.
+- Contas de referência do cliente: pixel `<pixel-id>`, página `<page-id>`, conta `<account-id>` (tira-os do Business Manager dele antes de começar).
 - Produto só com um formato: um anúncio simples com esse único vídeo/imagem.
 
 ## Números da <cliente> como referência de escala

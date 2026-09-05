@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # PowerScale Skills Kit: publicar o kit e preparar a entrega. Lado do Daniel.
 #
-#   ./ferramentas/entregar.sh "Carolina"
+#   ./ferramentas/entregar.sh "Maria"
 #
 # Publica (ou atualiza) o repositorio publico, marca a versao, e deixa no
 # Desktop a mensagem pronta a enviar.

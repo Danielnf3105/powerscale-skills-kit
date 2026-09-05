@@ -1,8 +1,8 @@
 # Blueprint da página de oferta de parceiro
 
-Estrutura, sistema de design e padrões de copy provados na página da Digital
-Wave. Copiar o esqueleto de a página de referência que já construíste
-WAVE (sem preço).html` e adaptar.
+Estrutura, sistema de design e padrões de copy provados numa página real de
+oferta de parceiro. Copiar o esqueleto da melhor página de oferta que já
+construíste e adaptar.
 
 ## Sistema de design (single-file)
 
@@ -15,7 +15,7 @@ WAVE (sem preço).html` e adaptar.
 - **Tipografia**: sans (Inter) no corpo; **serif itálico (Instrument Serif)**
   nas palavras-accent dos títulos (`<span class="it">`).
 - **Motion premium** (`motion-framer`, vanilla): fundo animado coerente com a
-  marca (ondas para "Wave", aurora para outras), reveals por IntersectionObserver,
+  marca (ondas se o método usa a metáfora do mar, aurora para outras), reveals por IntersectionObserver,
   count-up, draw-on-scroll dos diagramas SVG, botões magnéticos, hover-lift,
   barra de progresso de scroll. Tudo com `try/catch` por módulo e
   `prefers-reduced-motion` a desligar o decorativo.

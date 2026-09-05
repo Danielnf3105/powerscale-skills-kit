@@ -30,7 +30,7 @@ FORA = {"LICENSE", "LICENSE.txt", "LICENCE", "NOTICE"}
 def alvos():
     for f in sorted(RAIZ.glob("skills/*/SKILL.md")):
         yield f
-    for nome in ("LEIA-ME.md", "ENTREGAR.md", "PROCESSO.md"):
+    for nome in ("README.md", "ENTREGAR.md", "PROCESSO.md"):
         f = RAIZ / nome
         if f.exists():
             yield f

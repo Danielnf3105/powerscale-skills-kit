@@ -1,7 +1,7 @@
 # Formatos do Funil de Webinar
 
-A estrutura, secção a secção, de cada peça de copy do funil de webinar da
-funil. Lê o bloco do formato pedido para saber o que vai em cada parte.
+A estrutura, secção a secção, de cada peça de copy de um funil de webinar.
+Lê o bloco do formato pedido para saber o que vai em cada parte.
 
 Estas são estruturas, não camisas de força. O esqueleto vem daqui; a pele
 (vocabulário, tom, personalidade) vem sempre da voz de marca do cliente.

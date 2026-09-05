@@ -10,5 +10,6 @@ Thumbs.db
 MENSAGEM-PARA-*.txt
 
 # Logotipos de clientes ficam de fora. O da PowerScale entra.
+assets/logos/**/*.png
 assets/logos/*.png
 !assets/logos/powerscale/

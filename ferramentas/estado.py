@@ -16,7 +16,7 @@ Uso como CLI:
   python3 estado.py --marcar entrevista=em_curso --nota "parou na pergunta 4"
   python3 estado.py --proxima
   python3 estado.py --definir python_cmd="py -3"
-  python3 estado.py --responder pessoa.nome="Carolina Dinis"
+  python3 estado.py --responder pessoa.nome="Maria Silva"
   python3 estado.py --responder trabalho.tipos='["copy","anuncios"]'
 """
 import json
